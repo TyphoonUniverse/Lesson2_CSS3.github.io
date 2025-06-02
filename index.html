@@ -1,100 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colors</title>
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colors</title>
+  <style>
+    body {
+      background-color: aliceblue;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: large;
+    }
+
+    nav {
+      background-color: aliceblue;
+      display: inline-block;
+      width: 80%;
+    }
+
+    nav img {
+      width: 10%;
+    }
+
+    main {
+      background-color: rgb(199, 231, 135);
+      font-size: medium;
+    }
+
+    footer {
+      background-color: rgb(84, 220, 168);
+      font-size: small;
+      font-family: Cambria;
+      text-align: right;
+    }
+
+    /* Commented out li styling */
+    /*
+    li {
+      width: 200px;
+      font-size: 30px;
+      color: rgb(244, 130, 0);
+    }
+    */
+
+    h1 {
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 50px;
+      color: blueviolet;
+    }
+
+    p {
+      font-size: 50px;
+      color: blueviolet;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    p2 {
+      color: rgb(14, 14, 14);
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 40% 40%;
+      justify-content: space-around;
+      align-items: start;
+      row-gap: 20px;
+    }
+
+    .grid img {
+      width: 100%;
+    }
+
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+  </style>
 </head>
-<style>
-    body{
-    background-color: aliceblue;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
-}
-
-head{
-    background-color: blanchedalmond;
-}
-
-nav{
-    background-color: aliceblue;
-}
-
-main{
-    background-color: rgb(199, 231, 135);
-    font-size: medium;
-}
-
-footer{
-    background-color: rgb(84, 220, 168);
-    font-size: small;
-    font-family: Cambria;
-    text-align: right;
-
-}
-
-li{
-    width: 200px;
-    font-size: 30px;
-    color: rgb(244, 130, 0);
-
-}
-h1{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
-    color: blueviolet;
-}
-
-p{
-    font-size: 50px;
-    color: blueviolet;
-    font-family: Arial, Helvetica, sans-serif;
-}
-p2{
-    color: rgb(14, 14, 14);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-</style>
 
 <body>
-    <header>
-        <h1 id="top">Colors!</h1>
-    </header>
+  <!-- Skip to main content link -->
+  <a href="#main" style="position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden;">
+    Skip to main content
+  </a>
 
-    <main>
-        <ol>
-            <div>
-                <img src="red.png" alt="Red" width="200">
-                <li>
-                    <p style="color: red;">Red</p>
-                </li>
-            </div>
-            <div>
-                <img src="orange.png" alt="orange" width="200">
-                <li><p>Orange</p></li>
-            </div>
-            <div>
-                <img src="blue.png" alt="Blue" width="200">
-                <li><p>Blue</p></li>
-            </div>
-            <div>
-                <img src="yellow.png" alt="Yellow" width="200">
-                <li><p>Yellow</p></li>
-            </div>
-            <div>
-                <p2> This is sample of css project conbie html</p2>
-            </div>
-        </ol>
-        <a href="#top">Jump to the top</a>
-    </main>
-    <hr>
-    <footer>
-        1/6/2025 - Built by masterN
-    </footer>
+  <header>
+    <h1 id="top">Colors!</h1>
+  </header>
+
+  <nav>
+    <img src="logo.png" alt="Logo"> <!-- example nav image -->
+  </nav>
+
+  <main id="main" class="grid">
+    <div>
+      <img src="red.png" alt="Red">
+      <li>
+        <p style="color: red;">Red</p>
+      </li>
+    </div>
+    <div>
+      <img src="orange.png" alt="Orange">
+      <li><p>Orange</p></li>
+    </div>
+    <div>
+      <img src="blue.png" alt="Blue">
+      <li><p>Blue</p></li>
+    </div>
+    <div>
+      <img src="yellow.png" alt="Yellow">
+      <li><p>Yellow</p></li>
+    </div>
+    <div>
+      <p2>This is a sample of a CSS project combined with HTML.</p2>
+    </div>
+    <a href="#top">Jump to the top</a>
+  </main>
+
+  <hr>
+
+  <footer>
+    1/6/2025 - Built by masterN
+  </footer>
 </body>
-
 </html>
